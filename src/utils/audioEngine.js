@@ -30,7 +30,7 @@ class AudioEngine {
         wet: 0.5
       }).connect(this.effects.compressor);
 
-      // Create default synth
+      // Create default synth with filter
       this.synth = new Tone.PolySynth(Tone.Synth, {
         oscillator: {
           type: 'sine'
@@ -40,6 +40,19 @@ class AudioEngine {
           decay: 0.2,
           sustain: 0.5,
           release: 0.8
+        },
+        filter: {
+          type: 'lowpass',
+          frequency: 2000,
+          rolloff: -12
+        },
+        filterEnvelope: {
+          attack: 0.05,
+          decay: 0.2,
+          sustain: 0.5,
+          release: 0.8,
+          baseFrequency: 200,
+          octaves: 4
         }
       }).connect(this.effects.reverb);
 
@@ -83,6 +96,8 @@ class AudioEngine {
     
     // Map brightness to filter frequency (0-100 -> 200-8000 Hz)
     const frequency = 200 + (value / 100) * 7800;
+    
+    // Update the filter frequency for all voices
     this.synth.set({
       filterEnvelope: {
         baseFrequency: frequency
