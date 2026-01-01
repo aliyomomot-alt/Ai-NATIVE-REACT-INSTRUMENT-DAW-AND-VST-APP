@@ -1,0 +1,89 @@
+{
+  "vstInfo": {
+    "name": "Reverb Pro VST",
+    "version": "1.0.0",
+    "manufacturer": "AI Native Audio",
+    "category": "Effect",
+    "type": "reverb",
+    "description": "Professional reverb plugin with room simulation"
+  },
+  "parameters": {
+    "roomSize": {
+      "name": "Room Size",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "%",
+      "description": "Size of the simulated room"
+    },
+    "decay": {
+      "name": "Decay Time",
+      "min": 0.1,
+      "max": 10.0,
+      "default": 2.0,
+      "unit": "s",
+      "description": "Reverb decay time in seconds"
+    },
+    "wetDry": {
+      "name": "Wet/Dry Mix",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "%",
+      "description": "Balance between original and reverb signal"
+    },
+    "predelay": {
+      "name": "Pre-Delay",
+      "min": 0,
+      "max": 200,
+      "default": 20,
+      "unit": "ms",
+      "description": "Delay before reverb starts"
+    },
+    "damping": {
+      "name": "High Frequency Damping",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "%",
+      "description": "Amount of high frequency absorption"
+    }
+  },
+  "presets": [
+    {
+      "name": "Small Room",
+      "values": {
+        "roomSize": 25,
+        "decay": 0.8,
+        "wetDry": 30,
+        "predelay": 10,
+        "damping": 60
+      }
+    },
+    {
+      "name": "Large Hall",
+      "values": {
+        "roomSize": 85,
+        "decay": 4.5,
+        "wetDry": 60,
+        "predelay": 40,
+        "damping": 30
+      }
+    },
+    {
+      "name": "Vocal Plate",
+      "values": {
+        "roomSize": 45,
+        "decay": 2.2,
+        "wetDry": 45,
+        "predelay": 25,
+        "damping": 55
+      }
+    }
+  ],
+  "compatibility": {
+    "vstVersion": "2.4",
+    "platforms": ["win64", "mac", "linux"],
+    "daw": ["AI Native DAW", "compatible with VST 2.4 hosts"]
+  }
+}

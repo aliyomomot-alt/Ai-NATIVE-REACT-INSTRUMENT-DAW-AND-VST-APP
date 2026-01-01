@@ -1,0 +1,100 @@
+{
+  "projectInfo": {
+    "name": "Electronic Music Template",
+    "version": "1.0.0",
+    "author": "Aliyo Momot",
+    "created": "2026-01-01",
+    "description": "Electronic music production template with synth and drums"
+  },
+  "settings": {
+    "tempo": 128,
+    "timeSignature": "4/4",
+    "sampleRate": 48000,
+    "bitDepth": 24
+  },
+  "tracks": [
+    {
+      "id": 1,
+      "name": "Lead Synth",
+      "type": "instrument",
+      "instrument": "SYNTH",
+      "volume": 85,
+      "pan": 0,
+      "mute": false,
+      "solo": false,
+      "brightness": 75,
+      "effects": [
+        {
+          "type": "delay",
+          "enabled": true,
+          "params": {
+            "rate": 60,
+            "decay": 50,
+            "gain": 40,
+            "mix": 60
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Drum Kit",
+      "type": "instrument",
+      "instrument": "DRUM",
+      "volume": 90,
+      "pan": 0,
+      "mute": false,
+      "solo": false,
+      "effects": [
+        {
+          "type": "compressor",
+          "enabled": true,
+          "params": {
+            "ratio": 6,
+            "threshold": -15,
+            "gain": 3,
+            "autoThreshold": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Sub Bass",
+      "type": "instrument",
+      "instrument": "BASS",
+      "volume": 80,
+      "pan": 0,
+      "mute": false,
+      "solo": false,
+      "effects": []
+    }
+  ],
+  "mixer": {
+    "channels": [
+      { "id": 1, "volume": 85, "mute": false, "solo": false },
+      { "id": 2, "volume": 90, "mute": false, "solo": false },
+      { "id": 3, "volume": 80, "mute": false, "solo": false },
+      { "id": 4, "volume": 75, "mute": false, "solo": false },
+      { "id": 5, "volume": 75, "mute": false, "solo": false },
+      { "id": 6, "volume": 75, "mute": false, "solo": false },
+      { "id": 7, "volume": 75, "mute": false, "solo": false },
+      { "id": 8, "volume": 75, "mute": false, "solo": false }
+    ],
+    "mainVolume": 85
+  },
+  "automation": {
+    "enabled": true,
+    "clips": [
+      {
+        "trackId": 1,
+        "parameter": "volume",
+        "keyframes": [
+          { "time": 0, "value": 70 },
+          { "time": 4, "value": 85 },
+          { "time": 8, "value": 90 }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "presetInfo": {
+    "name": "Studio Reverb",
+    "version": "1.0.0",
+    "type": "reverb",
+    "author": "Aliyo Momot",
+    "category": "Room",
+    "description": "Professional studio reverb preset"
+  },
+  "parameters": {
+    "enabled": true,
+    "room": true,
+    "dry": false,
+    "wet": true,
+    "decay": 2.0,
+    "wetAmount": 0.5,
+    "predelay": 20,
+    "damping": 50
+  }
+}

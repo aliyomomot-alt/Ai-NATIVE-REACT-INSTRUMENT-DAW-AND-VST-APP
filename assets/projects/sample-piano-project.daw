@@ -1,0 +1,88 @@
+{
+  "projectInfo": {
+    "name": "Sample Piano Project",
+    "version": "1.0.0",
+    "author": "Aliyo Momot",
+    "created": "2026-01-01",
+    "description": "A sample DAW project featuring piano composition"
+  },
+  "settings": {
+    "tempo": 120,
+    "timeSignature": "4/4",
+    "sampleRate": 44100,
+    "bitDepth": 24
+  },
+  "tracks": [
+    {
+      "id": 1,
+      "name": "Piano Main",
+      "type": "instrument",
+      "instrument": "PIANO",
+      "volume": 80,
+      "pan": 0,
+      "mute": false,
+      "solo": false,
+      "effects": [
+        {
+          "type": "reverb",
+          "enabled": true,
+          "params": {
+            "room": true,
+            "dry": false,
+            "wet": true,
+            "decay": 2.0
+          }
+        },
+        {
+          "type": "compressor",
+          "enabled": true,
+          "params": {
+            "ratio": 4,
+            "threshold": -20,
+            "gain": 0,
+            "autoThreshold": false
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bass Line",
+      "type": "instrument",
+      "instrument": "BASS",
+      "volume": 75,
+      "pan": -10,
+      "mute": false,
+      "solo": false,
+      "effects": [
+        {
+          "type": "delay",
+          "enabled": true,
+          "params": {
+            "rate": 30,
+            "decay": 40,
+            "gain": 50,
+            "mix": 50
+          }
+        }
+      ]
+    }
+  ],
+  "mixer": {
+    "channels": [
+      { "id": 1, "volume": 75, "mute": false, "solo": false },
+      { "id": 2, "volume": 75, "mute": false, "solo": false },
+      { "id": 3, "volume": 75, "mute": false, "solo": false },
+      { "id": 4, "volume": 75, "mute": false, "solo": false },
+      { "id": 5, "volume": 75, "mute": false, "solo": false },
+      { "id": 6, "volume": 75, "mute": false, "solo": false },
+      { "id": 7, "volume": 75, "mute": false, "solo": false },
+      { "id": 8, "volume": 75, "mute": false, "solo": false }
+    ],
+    "mainVolume": 80
+  },
+  "automation": {
+    "enabled": false,
+    "clips": []
+  }
+}

@@ -122,6 +122,13 @@ The built applications will be in the `dist` folder.
 
 ```
 Ai-NATIVE-REACT-INSTRUMENT-DAW-AND-VST-APP/
+├── assets/              # Downloadable files
+│   ├── projects/        # DAW project files (.daw)
+│   ├── instruments/     # Native Instruments presets (.ni)
+│   ├── vst-configs/     # VST plugin configurations (.vst)
+│   ├── presets/         # Quick-load effect presets (.preset)
+│   ├── manifest.json    # Index of all downloadable files
+│   └── README.md        # Documentation for downloadable files
 ├── electron/
 │   ├── main.js          # Electron main process
 │   └── preload.js       # Preload script for IPC
@@ -170,6 +177,35 @@ Ai-NATIVE-REACT-INSTRUMENT-DAW-AND-VST-APP/
 4. **Mix Channels**: Use the left sidebar faders to balance your channels
 5. **Control Playback**: Use the automation and synchronization features
 6. **Create Cabins**: Add new instrument panel cabins from the right sidebar
+
+### Working with Downloadable Files
+
+The `assets/` directory contains ready-to-use files:
+
+**DAW Projects** (`.daw` files):
+- Load complete project templates with pre-configured tracks
+- `sample-piano-project.daw` - Piano composition starter
+- `electronic-template.daw` - Electronic music production template
+
+**NI Instrument Presets** (`.ni` files):
+- `piano-classic-grand.ni` - Classic grand piano
+- `guitar-electric-rock.ni` - Rock electric guitar
+- `bass-deep-sub.ni` - Deep sub bass
+- `synth-analog-lead.ni` - Analog lead synth
+- `wind-orchestral.ni` - Orchestral wind
+- `drum-electronic.ni` - Electronic drums
+
+**VST Configurations** (`.vst` files):
+- `reverb-pro.vst` - Professional reverb with presets
+- `compressor-dynamics.vst` - Dynamics compressor
+- `delay-echo.vst` - Creative delay effect
+
+**Effect Presets** (`.preset` files):
+- `studio-reverb.preset` - Studio reverb settings
+- `vocal-compressor.preset` - Vocal compression
+- `creative-delay.preset` - Experimental delay
+
+See [`assets/README.md`](assets/README.md) for detailed information on using these files.
 
 ### Keyboard Shortcuts (Future Implementation)
 
