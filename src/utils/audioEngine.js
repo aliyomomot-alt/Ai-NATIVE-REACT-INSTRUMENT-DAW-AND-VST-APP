@@ -95,6 +95,7 @@ class AudioEngine {
 
     if (params.rate !== undefined) {
       // Map rate to delay time (0-100 -> 0-1s)
+      // Note: 'rate' here controls the delay time/duration
       this.effects.delay.delayTime.value = params.rate / 100;
     }
     if (params.decay !== undefined) {

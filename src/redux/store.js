@@ -14,6 +14,3 @@ export const store = configureStore({
       serializableCheck: false, // For audio nodes
     }),
 });
-
-export type RootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
