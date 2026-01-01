@@ -7,6 +7,19 @@ A comprehensive Digital Audio Workstation (DAW) with Native Instruments (NI) and
 
 Created by **Aliyo Momot © 2026**
 
+## 📥 Download Center
+
+**[📥 Download Templates, Presets & Files →](assets/DOWNLOADS.md)**
+
+Access 16 downloadable files including:
+- 2 DAW project templates
+- 6 Native Instruments presets
+- 3 VST plugin configurations
+- 3 Effect presets
+- Complete documentation
+
+[**View Web Download Page →**](https://htmlpreview.github.io/?https://raw.githubusercontent.com/aliyomomot-alt/Ai-NATIVE-REACT-INSTRUMENT-DAW-AND-VST-APP/copilot/create-daw-app-structure/assets/downloads.html)
+
 ## 🎵 Features
 
 ### Core Components
