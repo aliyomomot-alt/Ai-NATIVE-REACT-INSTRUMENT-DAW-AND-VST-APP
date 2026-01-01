@@ -60,9 +60,9 @@
     },
     "reverb": {
       "enabled": true,
-      "room": false,
-      "dry": true,
-      "wet": false,
+      "room": true,
+      "dry": false,
+      "wet": true,
       "decay": 0.8,
       "wetAmount": 0.2
     }

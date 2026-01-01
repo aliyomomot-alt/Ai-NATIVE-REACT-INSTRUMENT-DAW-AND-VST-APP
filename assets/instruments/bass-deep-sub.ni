@@ -59,12 +59,7 @@
       "autoThreshold": true
     },
     "reverb": {
-      "enabled": false,
-      "room": false,
-      "dry": true,
-      "wet": false,
-      "decay": 1.0,
-      "wetAmount": 0.1
+      "enabled": false
     }
   }
 }

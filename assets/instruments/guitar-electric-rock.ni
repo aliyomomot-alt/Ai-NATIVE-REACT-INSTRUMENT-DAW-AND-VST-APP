@@ -62,7 +62,7 @@
       "enabled": true,
       "room": true,
       "dry": false,
-      "wet": false,
+      "wet": true,
       "decay": 1.5,
       "wetAmount": 0.3
     }
