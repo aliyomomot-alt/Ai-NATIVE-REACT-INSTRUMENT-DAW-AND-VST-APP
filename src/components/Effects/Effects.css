@@ -1,0 +1,115 @@
+.effects {
+  background: linear-gradient(135deg, #4a1e4e 0%, #1a1a2e 100%);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+}
+
+.effects-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.effects-header h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #c084fc;
+  text-shadow: 0 0 10px rgba(192, 132, 252, 0.5);
+}
+
+.effects-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.effect-module {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid rgba(192, 132, 252, 0.2);
+  transition: all 0.3s ease;
+}
+
+.effect-module:hover {
+  border-color: rgba(192, 132, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(192, 132, 252, 0.2);
+}
+
+.effect-module h4 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  color: #e9d5ff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.control {
+  margin-bottom: 1rem;
+}
+
+.control:last-child {
+  margin-bottom: 0;
+}
+
+.control label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ddd6fe;
+}
+
+.effect-slider {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.effect-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%);
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(192, 132, 252, 0.5);
+  transition: all 0.2s ease;
+}
+
+.effect-slider::-webkit-slider-thumb:hover {
+  background: linear-gradient(135deg, #e9d5ff 0%, #c084fc 100%);
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(192, 132, 252, 0.7);
+}
+
+.effect-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 10px rgba(192, 132, 252, 0.5);
+  transition: all 0.2s ease;
+}
+
+.effect-slider::-moz-range-thumb:hover {
+  background: linear-gradient(135deg, #e9d5ff 0%, #c084fc 100%);
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(192, 132, 252, 0.7);
+}
+
+@media (max-width: 768px) {
+  .effects-controls {
+    grid-template-columns: 1fr;
+  }
+}
