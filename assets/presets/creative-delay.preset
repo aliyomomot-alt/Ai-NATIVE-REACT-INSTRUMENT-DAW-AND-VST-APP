@@ -1,0 +1,19 @@
+{
+  "presetInfo": {
+    "name": "Creative Delay",
+    "version": "1.0.0",
+    "type": "delay",
+    "author": "Aliyo Momot",
+    "category": "Time",
+    "description": "Creative delay effect for experimental sounds"
+  },
+  "parameters": {
+    "enabled": true,
+    "rate": 55,
+    "decay": 55,
+    "gain": 55,
+    "mix": 55,
+    "feedback": 60,
+    "stereoWidth": 75
+  }
+}

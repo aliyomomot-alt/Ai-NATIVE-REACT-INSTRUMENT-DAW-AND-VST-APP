@@ -1,0 +1,136 @@
+{
+  "manifestInfo": {
+    "version": "1.0.0",
+    "created": "2026-01-01",
+    "description": "Index of all downloadable DAW, NI, and VST files",
+    "totalFiles": 14
+  },
+  "projects": [
+    {
+      "filename": "sample-piano-project.daw",
+      "name": "Sample Piano Project",
+      "description": "A sample DAW project featuring piano composition",
+      "tempo": 120,
+      "tracks": 2,
+      "size": "2.0 KB"
+    },
+    {
+      "filename": "electronic-template.daw",
+      "name": "Electronic Music Template",
+      "description": "Electronic music production template with synth and drums",
+      "tempo": 128,
+      "tracks": 3,
+      "size": "2.3 KB"
+    }
+  ],
+  "instruments": [
+    {
+      "filename": "piano-classic-grand.ni",
+      "name": "Classic Grand Piano",
+      "type": "PIANO",
+      "category": "Acoustic",
+      "description": "Classic grand piano sound with natural reverb",
+      "size": "1.4 KB"
+    },
+    {
+      "filename": "guitar-electric-rock.ni",
+      "name": "Electric Guitar Rock",
+      "type": "GUITAR",
+      "category": "Electric",
+      "description": "Rock electric guitar with distortion and sustain",
+      "size": "1.4 KB"
+    },
+    {
+      "filename": "bass-deep-sub.ni",
+      "name": "Deep Sub Bass",
+      "type": "BASS",
+      "category": "Electronic",
+      "description": "Deep sub bass for electronic music production",
+      "size": "1.4 KB"
+    },
+    {
+      "filename": "synth-analog-lead.ni",
+      "name": "Analog Lead Synth",
+      "type": "SYNTH",
+      "category": "Synthesizer",
+      "description": "Classic analog lead synthesizer sound",
+      "size": "1.4 KB"
+    },
+    {
+      "filename": "wind-orchestral.ni",
+      "name": "Orchestral Wind",
+      "type": "WIND",
+      "category": "Orchestral",
+      "description": "Orchestral wind instrument sound with natural breath",
+      "size": "1.4 KB"
+    },
+    {
+      "filename": "drum-electronic.ni",
+      "name": "Electronic Drum Kit",
+      "type": "DRUM",
+      "category": "Electronic",
+      "description": "Electronic drum kit with punchy sound",
+      "size": "1.4 KB"
+    }
+  ],
+  "vstConfigs": [
+    {
+      "filename": "reverb-pro.vst",
+      "name": "Reverb Pro VST",
+      "type": "reverb",
+      "category": "Effect",
+      "description": "Professional reverb plugin with room simulation",
+      "presets": 3,
+      "size": "1.9 KB"
+    },
+    {
+      "filename": "compressor-dynamics.vst",
+      "name": "Compressor Dynamics VST",
+      "type": "compressor",
+      "category": "Effect",
+      "description": "Professional dynamics compressor with auto-threshold",
+      "presets": 3,
+      "size": "2.2 KB"
+    },
+    {
+      "filename": "delay-echo.vst",
+      "name": "Delay Echo VST",
+      "type": "delay",
+      "category": "Effect",
+      "description": "Creative delay effect with feedback and filtering",
+      "presets": 3,
+      "size": "1.9 KB"
+    }
+  ],
+  "presets": [
+    {
+      "filename": "studio-reverb.preset",
+      "name": "Studio Reverb",
+      "type": "reverb",
+      "category": "Room",
+      "description": "Professional studio reverb preset",
+      "size": "384 B"
+    },
+    {
+      "filename": "vocal-compressor.preset",
+      "name": "Vocal Compressor",
+      "type": "compressor",
+      "category": "Dynamics",
+      "description": "Optimized compressor for vocal recordings",
+      "size": "388 B"
+    },
+    {
+      "filename": "creative-delay.preset",
+      "name": "Creative Delay",
+      "type": "delay",
+      "category": "Time",
+      "description": "Creative delay effect for experimental sounds",
+      "size": "371 B"
+    }
+  ],
+  "compatibility": {
+    "dawVersion": "1.0.0+",
+    "vstVersion": "2.4",
+    "platforms": ["Windows", "macOS", "Linux"]
+  }
+}

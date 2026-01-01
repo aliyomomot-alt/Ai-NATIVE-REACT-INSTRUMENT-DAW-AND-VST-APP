@@ -1,0 +1,89 @@
+{
+  "vstInfo": {
+    "name": "Delay Echo VST",
+    "version": "1.0.0",
+    "manufacturer": "AI Native Audio",
+    "category": "Effect",
+    "type": "delay",
+    "description": "Creative delay effect with feedback and filtering"
+  },
+  "parameters": {
+    "delayTime": {
+      "name": "Delay Time",
+      "min": 0,
+      "max": 2000,
+      "default": 500,
+      "unit": "ms",
+      "description": "Time between echoes"
+    },
+    "feedback": {
+      "name": "Feedback",
+      "min": 0,
+      "max": 95,
+      "default": 50,
+      "unit": "%",
+      "description": "Amount of signal fed back into delay"
+    },
+    "wetDry": {
+      "name": "Wet/Dry Mix",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "%",
+      "description": "Balance between original and delayed signal"
+    },
+    "filterFreq": {
+      "name": "Filter Frequency",
+      "min": 100,
+      "max": 10000,
+      "default": 2000,
+      "unit": "Hz",
+      "description": "Frequency of delay filter"
+    },
+    "stereoWidth": {
+      "name": "Stereo Width",
+      "min": 0,
+      "max": 100,
+      "default": 50,
+      "unit": "%",
+      "description": "Stereo spread of delay"
+    }
+  },
+  "presets": [
+    {
+      "name": "Ping Pong",
+      "values": {
+        "delayTime": 375,
+        "feedback": 40,
+        "wetDry": 50,
+        "filterFreq": 3000,
+        "stereoWidth": 100
+      }
+    },
+    {
+      "name": "Slap Back",
+      "values": {
+        "delayTime": 120,
+        "feedback": 15,
+        "wetDry": 35,
+        "filterFreq": 4000,
+        "stereoWidth": 20
+      }
+    },
+    {
+      "name": "Ambient Wash",
+      "values": {
+        "delayTime": 800,
+        "feedback": 70,
+        "wetDry": 65,
+        "filterFreq": 1500,
+        "stereoWidth": 80
+      }
+    }
+  ],
+  "compatibility": {
+    "vstVersion": "2.4",
+    "platforms": ["win64", "mac", "linux"],
+    "daw": ["AI Native DAW", "compatible with VST 2.4 hosts"]
+  }
+}

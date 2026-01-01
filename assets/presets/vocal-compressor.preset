@@ -1,0 +1,19 @@
+{
+  "presetInfo": {
+    "name": "Vocal Compressor",
+    "version": "1.0.0",
+    "type": "compressor",
+    "author": "Aliyo Momot",
+    "category": "Dynamics",
+    "description": "Optimized compressor for vocal recordings"
+  },
+  "parameters": {
+    "enabled": true,
+    "ratio": 4,
+    "threshold": -18,
+    "gain": 3,
+    "autoThreshold": true,
+    "attack": 8,
+    "release": 120
+  }
+}

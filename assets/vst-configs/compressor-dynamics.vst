@@ -1,0 +1,98 @@
+{
+  "vstInfo": {
+    "name": "Compressor Dynamics VST",
+    "version": "1.0.0",
+    "manufacturer": "AI Native Audio",
+    "category": "Effect",
+    "type": "compressor",
+    "description": "Professional dynamics compressor with auto-threshold"
+  },
+  "parameters": {
+    "threshold": {
+      "name": "Threshold",
+      "min": -60,
+      "max": 0,
+      "default": -20,
+      "unit": "dB",
+      "description": "Level at which compression begins"
+    },
+    "ratio": {
+      "name": "Compression Ratio",
+      "min": 1,
+      "max": 20,
+      "default": 4,
+      "unit": ":1",
+      "description": "Amount of compression applied"
+    },
+    "attack": {
+      "name": "Attack Time",
+      "min": 0.1,
+      "max": 100,
+      "default": 10,
+      "unit": "ms",
+      "description": "How quickly compression starts"
+    },
+    "release": {
+      "name": "Release Time",
+      "min": 10,
+      "max": 1000,
+      "default": 100,
+      "unit": "ms",
+      "description": "How quickly compression stops"
+    },
+    "makeupGain": {
+      "name": "Makeup Gain",
+      "min": -20,
+      "max": 20,
+      "default": 0,
+      "unit": "dB",
+      "description": "Output gain compensation"
+    },
+    "autoThreshold": {
+      "name": "Auto Threshold",
+      "type": "boolean",
+      "default": false,
+      "description": "Automatically adjust threshold based on input"
+    }
+  },
+  "presets": [
+    {
+      "name": "Gentle Compression",
+      "values": {
+        "threshold": -25,
+        "ratio": 2,
+        "attack": 15,
+        "release": 150,
+        "makeupGain": 2,
+        "autoThreshold": false
+      }
+    },
+    {
+      "name": "Hard Limiting",
+      "values": {
+        "threshold": -10,
+        "ratio": 12,
+        "attack": 1,
+        "release": 50,
+        "makeupGain": 5,
+        "autoThreshold": false
+      }
+    },
+    {
+      "name": "Vocal Dynamic",
+      "values": {
+        "threshold": -18,
+        "ratio": 4,
+        "attack": 8,
+        "release": 120,
+        "makeupGain": 3,
+        "autoThreshold": true
+      }
+    }
+  ],
+  "compatibility": {
+    "vstVersion": "2.4",
+    "platforms": ["win64", "mac", "linux"],
+    "daw": ["AI Native DAW", "compatible with VST 2.4 hosts"]
+  }
+}
