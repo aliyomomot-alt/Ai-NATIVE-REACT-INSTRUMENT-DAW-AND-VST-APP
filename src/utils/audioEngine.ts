@@ -19,7 +19,6 @@ export class AudioEngine {
 
   public async start(): Promise<void> {
     await Tone.start();
-    console.log('Audio context started');
   }
 
   public startTransport(): void {

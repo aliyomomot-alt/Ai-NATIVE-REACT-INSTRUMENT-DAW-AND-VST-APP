@@ -92,8 +92,8 @@ export const AIFeatures: React.FC = () => {
   };
 
   const generateAIDrumPattern = () => {
-    // This would trigger the drum machine's randomize function
-    alert('AI Drum Pattern Generated! Use the Drum Machine\'s "AI Generate" button.');
+    // Trigger drum machine randomization would be handled via props/state management
+    console.info('AI Drum Pattern: Use the Drum Machine\'s "AI Generate" button to create patterns.');
   };
 
   return (

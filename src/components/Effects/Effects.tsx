@@ -20,8 +20,8 @@ export const Effects: React.FC = () => {
     const delay = new Tone.FeedbackDelay({ delayTime: 0.25, feedback: 0.3, wet: 0 });
     const dist = new Tone.Distortion({ distortion: 0, wet: 1 });
 
-    reverb.generate().then(() => {
-      console.log('Reverb ready');
+    reverb.generate().catch((err) => {
+      console.error('Failed to generate reverb:', err);
     });
 
     // Chain effects to destination
